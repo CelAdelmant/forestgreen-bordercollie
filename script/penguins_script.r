@@ -2,7 +2,7 @@
 library(palmerpenguins)
 library(ggplot2)
 library(dplyr)
-library(ggthemes) # package for plotting
+library(ggthemes) # package for plotting nice
 
 #example filtering
 filtered_data <- penguins %>% filter()
@@ -46,7 +46,7 @@ ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, colour = spe
 # add beautiful plot
 ggplot(data = penguins, aes(x = island, y = body_mass_g, colour = island, fill = island)) +
   geom_boxplot() +
-  ggthemes::theme_par() +
+  ggthemes::theme_par() + # add theme here
   labs(
     x = "island",
     y = "Body mass (g)",
