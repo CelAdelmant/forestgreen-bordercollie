@@ -70,6 +70,6 @@ ggplot(data = penguins, aes(x = island, y = body_mass_g, colour = island, fill =
 
 write.csv(
   penguins,
-  file = file.path("data", "penguins2.csv"),
+  file = file.path("data", "penguins.csv"),
   row.names = FALSE
 )
