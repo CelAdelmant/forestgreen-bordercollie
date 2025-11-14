@@ -68,8 +68,3 @@ ggplot(data = penguins, aes(x = island, y = body_mass_g, colour = island, fill =
     "Torgersen" = "goldenrod4"
   ))
 
-write.csv(
-  penguins,
-  file = file.path("data", "penguins.csv"),
-  row.names = FALSE
-)
