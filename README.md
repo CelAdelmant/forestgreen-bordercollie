@@ -9,7 +9,10 @@ date: 14/11/2025
 
 This is a repost=itory I made as part of the GitHub tutorial for the OpenScience course in Hjerkinn, Norway 2025. 
 We learned 
-- how to congigure git
+- how to configure git
 - how to create personal access tokens
 - how to create a new repository in R and push it to github
 - how to create a new repository in github and clone it to our own device
+- how to use branches
+- how to fork a repo
+ 
