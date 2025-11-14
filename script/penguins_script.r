@@ -25,4 +25,24 @@ ggplot(data = penguins, aes(x = species, y = flipper_length_mm, fill = sex)) +
 penguins %>% group_by(species) %>% count(island)
 
 
+#plot of sex and body mass 
+ggplot(data = penguins, aes(x = species, y = body_mass_g, fill = sex)) + 
+    geom_boxplot(size = 1.5, alpha = 0.8)+
+    theme_bw() +
+    labs(x = "Sex", y = "Body mass (g)", title = "The association between body mass and sex in three species of Penguins")+
+    scale_fill_manual(values = c("male" = "skyblue", "female" = "pink"))
 
+
+#plot of flipper length and body mass 
+ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, colour = species)) + 
+    geom_point(size = 4)+
+    geom_smooth(method = "lm", size = 2) +
+    theme_bw() +
+    labs(x = "Flipper Length (mm)", y = "Body mass (g)", title = "The association between Flipper length and body mass in three species of Penguins")+
+    scale_colour_manual(values = c("Adelie" = "#00798c", "Chinstrap" = "#d1495b", "Gentoo" = "#edae49"))
+
+write.csv(
+  penguins,
+  file = file.path("data", "penguins.csv"),
+  row.names = FALSE
+)
