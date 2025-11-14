@@ -1,6 +1,8 @@
 ## penguins script
 library(palmerpenguins)
 library(ggplot2)
+
+# add packages
 library(dplyr)
 library(ggthemes) # package for plotting nice
 
