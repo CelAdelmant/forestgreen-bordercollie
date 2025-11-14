@@ -2,7 +2,7 @@
 library(palmerpenguins)
 library(ggplot2)
 library(dplyr)
-library(ggthemes)
+library(ggthemes) # package for plotting
 
 #example filtering
 filtered_data <- penguins %>% filter()
